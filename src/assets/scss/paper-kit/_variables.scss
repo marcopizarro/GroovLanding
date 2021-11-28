@@ -44,22 +44,25 @@ $primary-states-color:       darken($primary-color, 10%) !default;
 $success-color:              #6bd098 !default;
 $success-states-color:       darken($success-color, 10%) !default;
 
-$info-color:                 #51bcda !default;
+$info-color:                 #5E0072 !default;
 $info-states-color:          darken($info-color, 10%) !default;
 
 $warning-color:              #fbc658 !default;
 $warning-states-color:       darken($warning-color, 10%) !default;
 
-$danger-color:               #f5593d !default;
+$danger-color:               #FF0060 !default;
 $danger-states-color:        darken($danger-color, 8%) !default;
 
 $link-disabled-color:        #666666 !default;
 
-$purple-color:               #c178c1 !default;
+$purple-color:               #5E0072 !default;
 $purple-states-color:        darken($purple-color, 8%) !default;
 
-$brown-color:                #dcb285 !default;
-$brown-states-color:         darken($brown-color, 8%) !default;
+$brown-color:               #5E0072 !default;
+$brown-states-color:        darken($purple-color, 8%) !default;
+
+$blue-color:                #010088 !default;
+$blue-states-color:         darken($brown-color, 8%) !default;
 
 
 

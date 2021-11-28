@@ -136,8 +136,7 @@ function ExamplesNavbar() {
               <Button
                 className="btn-round"
                 color="danger"
-                href=""
-                target="_blank"
+                href="#signUp"
               >
                  Join Waitlist
               </Button>

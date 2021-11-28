@@ -40,6 +40,12 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 
+const groovSync = {
+  width: '50%',
+  // textAlign: 'right',
+  
+};
+
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -57,15 +63,14 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
+                <h1 className="title">What we do.</h1>
                 <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                Hey! We're Groov, a cloud-tech music startup streamlining online collaboration with music software, enhancing organizational structure for audio projects, and bringing server-grade hardware to producers.
                 </h5>
-                <br />
+                <h5 className="description">
+                As more and more billboard charting hits start to come out of bedroom closets, it is clear that the emphasis in creating music is no longer in the equipment that one has, but the ability to collaborate with like minded individuals. However, even as digital audio workstation technology advancements are being made, there is little to no progress on the inefficacies faced by musicians when collaborating with one another through an online medium.
+                </h5>
+                {/* <br />
                 <Button
                   className="btn-round"
                   color="info"
@@ -73,258 +78,101 @@ function LandingPage() {
                   onClick={(e) => e.preventDefault()}
                 >
                   See Details
-                </Button>
+                </Button> */}
               </Col>
             </Row>
             <br />
             <br />
-            <Row>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-album-2" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
-                    <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-bulb-63" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
-                    <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-chart-bar-32" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Statistics</h4>
-                    <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-sun-fog-29" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
-                    <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-            </Row>
+            
           </Container>
         </div>
+
         <div className="section section-dark text-center">
           <Container>
-            <h2 className="title">Let's talk about us</h2>
+            <h1 className="title">What we're solving.</h1>
             <Row>
               <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={
-                          require("assets/img/faces/clem-onojeghuo-3.jpg")
-                            .default
-                        }
-                      />
-                    </a>
+                <div className="info">
+                  <div className="icon icon-info" >
+                    <i className="nc-icon nc-time-alarm" />
                   </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category">Product Manager</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach the heights of your capabilities or make
-                      the money that you want without becoming very good at it.
+                  <div className="description">
+                    <h4 className="info-title">Inefficient Collaboration</h4>
+                    <p className="description">
+                    Online music collaboration is tedious and time-consuming
                     </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
+                    <Button className="btn-link" color="info" href="#pablo">
+                      See more
                     </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
+                  </div>
+                </div>
               </Col>
               <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={
-                          require("assets/img/faces/joe-gardner-2.jpg").default
-                        }
-                      />
-                    </a>
+                <div className="info">
+                  <div className="icon icon-info">
+                    <i className="nc-icon nc-layout-11" />
                   </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        <h6 className="card-category">Designer</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes an
-                      orchestra to play it.
+                  <div className="description">
+                    <h4 className="info-title">Minimal Organization/Structure</h4>
+                    <p>
+                    Enterprise-level music edit consolidation and version control is non-existent
                     </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
+                    <Button className="btn-link" color="info" href="#pablo">
+                      See more
                     </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
+                  </div>
+                </div>
               </Col>
               <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={
-                          require("assets/img/faces/erik-lucatero-2.jpg")
-                            .default
-                        }
-                      />
-                    </a>
+                <div className="info">
+                  <div className="icon icon-info">
+                    <i className="nc-icon nc-money-coins" />
                   </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
-                        <h6 className="card-category">Developer</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
+                  <div className="description">
+                    <h4 className="info-title">Costly Hardware/Software</h4>
+                    <p>
+                    An industry grade production suite costs thousands of dollars and takes up 100s of GBs
                     </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
+                    <Button className="btn-link" color="info" href="#pablo">
+                      See more
                     </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
+                  </div>
+                </div>
               </Col>
             </Row>
           </Container>
         </div>
+
         <div className="section landing-section">
-          <Container>
+          <Container id="solutions">
+            <h1 className="title text-center" >How we're solving it.</h1>
+
+            <div style={{marginLeft: '0', marginRight: 'auto', background:"#FF0060", width: '50%', borderRadius: '25px', padding:'20px', color:"white"}}>
+            <h2>GroovSync</h2>
+            <h3>"Figma for Music"</h3>
+            <h4>GroovSync allows musicians to collaborate pre-export, and get rid of the pesky need to send mp3s for high-fidelity audio monitoring. By syncing project files and their dependencies, GroovSync offers low-latency real-time host to host editing for industry grade software.</h4>
+            </div>
+
+            <div style={{marginLeft: 'auto', marginRight: '0', background:"#010088", width: '50%', borderRadius: '25px', padding:'20px', color:"white"}}>
+            <h2>GroovDepot</h2>
+            <h3>"Github for Music"</h3>
+            <h4>GroovDepot provides centralized communication for production teams and music labels. By providing scheduling functionality, version control technology, and software-less audio monitoring, GroovDepot allows teams to have peace of mind when collaborating on large-scale projects.</h4>
+            </div>
+
+            <div style={{marginLeft: '0', marginRight: 'auto', background:"#5E0072", width: '50%', borderRadius: '25px', padding:'20px', color:"white"}}>
+            <h2>GroovDeck</h2>
+            <h3>"Google Stadia for Music"</h3>
+            <h4>GroovDeck enables musicians to create without limits. Access to server-grade VM hardware along with pre-licensed rent-to-own synthesizers, equipment and sound banks shifts the focus to making music rather than struggling with filled up hard drives and software crashes.</h4>
+            </div>
+            
+          </Container>
+        </div>
+
+        <div className="section landing-section section-dark">
+          <Container id="signUp">
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Keep in touch?</h2>
+                <h2 className="text-center">Joing our waitlist!</h2>
                 <Form className="contact-form">
                   <Row>
                     <Col md="6">
@@ -350,14 +198,9 @@ function LandingPage() {
                       </InputGroup>
                     </Col>
                   </Row>
-                  <label>Message</label>
-                  <Input
-                    placeholder="Tell us your thoughts and feelings..."
-                    type="textarea"
-                    rows="4"
-                  />
+
                   <Row>
-                    <Col className="ml-auto mr-auto" md="4">
+                    <Col  className="ml-auto mr-auto" md="4">
                       <Button className="btn-fill" color="danger" size="lg">
                         Send Message
                       </Button>
@@ -368,6 +211,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
+
       </div>
       <DemoFooter />
     </>
