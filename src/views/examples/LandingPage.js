@@ -101,7 +101,7 @@ function LandingPage() {
                     <p className="description">
                     Online music collaboration is tedious and time-consuming
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
+                    <Button className="btn-link" color="info" href="#groovsync">
                       See more
                     </Button>
                   </div>
@@ -117,7 +117,7 @@ function LandingPage() {
                     <p>
                     Enterprise-level music edit consolidation and version control is non-existent
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
+                    <Button className="btn-link" color="info" href="#groovdepot">
                       See more
                     </Button>
                   </div>
@@ -133,7 +133,7 @@ function LandingPage() {
                     <p>
                     An industry grade production suite costs thousands of dollars and takes up 100s of GBs
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
+                    <Button className="btn-link" color="info" href="#groovdeck">
                       See more
                     </Button>
                   </div>
@@ -143,23 +143,23 @@ function LandingPage() {
           </Container>
         </div>
 
-        <div className="section landing-section">
+        <div className="section landing-section text-center">
           <Container id="solutions">
             <h1 className="title text-center" >How we're solving it.</h1>
 
-            <div style={{marginLeft: '0', marginRight: 'auto', background:"#FF0060", width: '50%', borderRadius: '25px', padding:'20px', color:"white"}}>
+            <div id = "groovsync" style={{background:"#FF0060", width: '100%', borderRadius: '25px', padding:'20px', color:"white", margin:'20px'}}>
             <h2>GroovSync</h2>
             <h3>"Figma for Music"</h3>
             <h4>GroovSync allows musicians to collaborate pre-export, and get rid of the pesky need to send mp3s for high-fidelity audio monitoring. By syncing project files and their dependencies, GroovSync offers low-latency real-time host to host editing for industry grade software.</h4>
             </div>
 
-            <div style={{marginLeft: 'auto', marginRight: '0', background:"#010088", width: '50%', borderRadius: '25px', padding:'20px', color:"white"}}>
+            <div id = "groovdepot" style={{ background:"#010088", width: '100%', borderRadius: '25px', padding:'20px', color:"white", margin:'20px'}}>
             <h2>GroovDepot</h2>
             <h3>"Github for Music"</h3>
             <h4>GroovDepot provides centralized communication for production teams and music labels. By providing scheduling functionality, version control technology, and software-less audio monitoring, GroovDepot allows teams to have peace of mind when collaborating on large-scale projects.</h4>
             </div>
 
-            <div style={{marginLeft: '0', marginRight: 'auto', background:"#5E0072", width: '50%', borderRadius: '25px', padding:'20px', color:"white"}}>
+            <div id = "groovdeck" style={{background:"#5E0072", width: '100%', borderRadius: '25px', padding:'20px', color:"white", margin:'20px'}}>
             <h2>GroovDeck</h2>
             <h3>"Google Stadia for Music"</h3>
             <h4>GroovDeck enables musicians to create without limits. Access to server-grade VM hardware along with pre-licensed rent-to-own synthesizers, equipment and sound banks shifts the focus to making music rather than struggling with filled up hard drives and software crashes.</h4>
