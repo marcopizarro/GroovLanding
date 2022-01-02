@@ -171,7 +171,7 @@ function LandingPage() {
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Joing our waitlist!</h2>
-                <Form className="contact-form" netlify>
+                <Form name="contact"  method="post" className="contact-form">
                   <Row>
                     <Col md="6">
                       <label>Name</label>
@@ -181,7 +181,8 @@ function LandingPage() {
                             <i className="nc-icon nc-single-02" />
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
+                        <Input placeholder="Name" name="name" type="text" />
+                        <Input type="hidden" name="form-name" value="contact" />
                       </InputGroup>
                     </Col>
                     <Col md="6">
@@ -192,15 +193,15 @@ function LandingPage() {
                             <i className="nc-icon nc-email-85" />
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
+                        <Input placeholder="Email" name="email" type="text" />
                       </InputGroup>
                     </Col>
                   </Row>
 
                   <Row>
                     <Col  className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
-                        Send Message
+                      <Button type="submit" className="btn-fill" color="danger" size="lg">
+                        Submit
                       </Button>
                     </Col>
                   </Row>
