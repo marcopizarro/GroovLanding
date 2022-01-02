@@ -171,7 +171,7 @@ function LandingPage() {
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Joing our waitlist!</h2>
-                <Form className="contact-form">
+                <Form className="contact-form" netlify>
                   <Row>
                     <Col md="6">
                       <label>Name</label>
