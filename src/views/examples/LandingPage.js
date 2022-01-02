@@ -171,7 +171,7 @@ function LandingPage() {
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Joing our waitlist!</h2>
-                <Form name="contact"  method="post" className="contact-form">
+                <Form name="contact"  method="post" data-netlify-recaptcha="true" className="contact-form">
                   <Row>
                     <Col md="6">
                       <label>Name</label>
@@ -200,6 +200,7 @@ function LandingPage() {
 
                   <Row>
                     <Col  className="ml-auto mr-auto" md="4">
+                    <div data-netlify-recaptcha="true"></div>
                       <Button type="submit" className="btn-fill" color="danger" size="lg">
                         Submit
                       </Button>
